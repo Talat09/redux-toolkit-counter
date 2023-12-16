@@ -15,5 +15,5 @@ const counterSlice = createSlice({
     },
   },
 });
-export const { increment, decrement, reset } = counterSlice.actions;
+export const { increment, decrement, reset } = counterSlice.actions; //reducer er under a action gula thakbe
 export default counterSlice.reducer;
