@@ -13,7 +13,11 @@ const counterSlice = createSlice({
     reset: (state) => {
       state.count = 0;
     },
+    increaseByAmmount: (state, action) => {
+      state.count = state.count + action.payload;
+    },
   },
 });
-export const { increment, decrement, reset } = counterSlice.actions; //reducer er under a action gula thakbe
+export const { increment, decrement, reset, increaseByAmmount } =
+  counterSlice.actions; //reducer er under a action gula thakbe
 export default counterSlice.reducer;
